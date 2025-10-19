@@ -1,0 +1,36 @@
+
+{
+  "cities": [
+    {
+      "city": "Denver",
+      "domain": "denver.org",
+      "use_selenium": true,
+      "date_mesh": {
+        "mode": "weekly",
+        "start": "2024-01-01",
+        "end":   "2026-12-31"
+      },
+      "list_url_template": "https://www.denver.org/events/calendar/?filter_daterange%5Bstart%5D={start}&filter_daterange%5Bend%5D={end}"
+    },
+    {
+      "city": "Austin",
+      "domain": "austintexas.gov",
+      "use_selenium": false,
+      "months_back": 24,
+      "months_forward": 12,
+      "list_url_template": "https://www.austintexas.gov/fullcalendar?department=1807&start_date={start}&end_date={end}"
+    },
+    {
+      "city": "Daytona Beach",
+      "domain": "daytonabeach.gov",
+      "use_selenium": false,
+      "months_back": 24,
+      "months_forward": 12,
+      "list_url_template": "https://www.daytonabeach.gov/Calendar.aspx?view=list&year={year}&month={month}"
+    }
+  ],
+  "rate_limit_seconds": 0.6,
+  "user_agent": "MSDS-IE Data Event - Research/1.0 (contact: fabienne.vancappel@gmail.com)",
+  "out_csv": "city_portals_collected.csv"
+}
+

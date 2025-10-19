@@ -1,0 +1,29 @@
+{
+  "cities": [
+    {
+      "city": "Denver",
+      "subreddit": "Denver",
+      "queries": ["event", "concert", "festival", "meetup", "things to do", "this weekend"],
+      "time_filter": "month",
+      "limit_per_query": 150
+    },
+    {
+      "city": "Austin",
+      "subreddit": "Austin",
+      "queries": ["event", "music", "festival", "meetup", "things to do", "this weekend"],
+      "time_filter": "month",
+      "limit_per_query": 150
+    },
+    {
+      "city": "Daytona Beach",
+      "subreddit": "daytonabeach",
+      "queries": ["event", "race", "concert", "festival", "things to do", "bike week"],
+      "time_filter": "year",
+      "limit_per_query": 150
+    }
+  ],
+  "rate_limit_seconds": 0.5,
+  "user_agent": "MSDS-IE-Research/1.0 (contact: fabienne.vancappel@gmail.com)",
+  "out_csv": "reddit_collected.csv"
+}
+
